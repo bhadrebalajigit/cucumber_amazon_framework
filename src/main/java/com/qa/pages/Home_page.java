@@ -70,4 +70,13 @@ public class Home_page {
     	return new Login_page(driver);
     	
     }
+    
+    public String title_homepage()
+    {
+    	return driver.getTitle();
+    }
+    public void close_browser()
+    {
+    	driver.close();
+    }
 }

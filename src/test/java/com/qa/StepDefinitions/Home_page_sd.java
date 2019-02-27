@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 
 import com.qa.Managers.PageObjectManager;
 import com.qa.Managers.WebDriverManager;
+import com.qa.TestBase.TestContext;
 import com.qa.pages.Home_page;
 
 import cucumber.api.java.After;
@@ -13,18 +14,21 @@ import cucumber.api.java.en.Then;
 
 public class Home_page_sd {
 
-	WebDriver driver;
-	WebDriverManager webDriverManager;
+
+	TestContext testContext;
 	public Home_page homePage;
-	public PageObjectManager pageObjectManager;
+
 	
-	
+	public Home_page_sd(TestContext context)
+	{
+		testContext=context;
+		homePage=testContext.getPageObjectManager().getHomePage();
+		
+	}
 	@Given("^User navigate to Amazon site$")
-	public void user_navigate_to_Amazon_site() throws Throwable {
-		webDriverManager = new WebDriverManager();
-		 driver = webDriverManager.getDriver();
-		 pageObjectManager = new PageObjectManager(driver);
-		 homePage = pageObjectManager.getHomePage();
+	public void user_navigate_to_Amazon_site() throws Throwable 
+	{
+
 		 homePage.navigateTo_HomePage();
 		 
 	   
@@ -34,8 +38,7 @@ public class Home_page_sd {
 	public void validate_title_of_of_amazone_page() throws Throwable 
 	
 	{
-	    String title=driver.getTitle();
-		System.out.println("Title of page:"+title);
+	    System.out.println("Title of HomePage"+homePage.title_homepage());
 	  
 	}
 	
@@ -59,10 +62,11 @@ public class Home_page_sd {
 	{
 	   homePage.Hello_signin_button();
 	}
+	
 
-	@After
-	public void teardown()
+	@Then("^close the browser$")
+	public void close_the_browser() throws Throwable
 	{
-		//driver.close();
+	   homePage.close_browser();
 	}
 }
