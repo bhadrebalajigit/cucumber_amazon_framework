@@ -15,26 +15,23 @@ public class Product_reader
 		private BufferedReader buffer;
 		public void filereader() throws IOException
 		{
-			/*file=new FileReader(System.getProperty("user.dir")+"/src/main/java/com/qa/config/products.txt");
-			buffer= new BufferedReader(file);
-			return buffer;*/
+
 			BufferedReader bufReader = new BufferedReader(new FileReader(System.getProperty("user.dir")+"/src/main/java/com/qa/config/products.txt")); 
 			ArrayList<String> listOfLines = new ArrayList<>(); 
 			String line = bufReader.readLine(); 
-			while (line != null) 
-			{ listOfLines.add(line); 
-			line = bufReader.readLine();
+			
+			if(line!=null)
+			{
+				String[] split=line.split(",");
+				for(String a:split)
+				{
+					System.out.println(a);
+				}
+				line = bufReader.readLine();
 			}
-			 System.out.println(listOfLines);
+				 
 			bufReader.close();
-		
-
 		}
-		
-	
-		
-
-		
 		public static void main(String args[]) throws IOException
 		{
 			Product_reader p1= new Product_reader();
