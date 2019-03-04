@@ -126,12 +126,7 @@
                     </executions>
                 </plugin>
             </plugins>
-            <pluginRepositories>
-    <pluginRepository>
-        <id>dtrott</id>
-        <url>http://maven.davidtrott.com/repository</url>
-    </pluginRepository>
-</pluginRepositories>
+
     
 </build>
 </project>

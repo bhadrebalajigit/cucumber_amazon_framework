@@ -29,5 +29,5 @@ public class PageObjectManager {
 		return (loginpage == null) ? loginpage = new Login_page(driver)
 				: loginpage;
 	}
-
+  
 }

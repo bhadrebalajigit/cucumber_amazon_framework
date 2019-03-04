@@ -3,18 +3,19 @@
     "line": 2,
     "elements": [
       {
-        "line": 6,
-        "name": "User Logged in Amazon using Data Table",
+        "line": 24,
+        "name": "Validate Hello Sign in menu",
         "description": "",
-        "id": "to-test-login-of-amazon-page-using-different-data-driven-testing;user-logged-in-amazon-using-data-table",
+        "id": "to-test-home-page-of-amazon-website;validate-hello-sign-in-menu",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "status": "skipped"
+              "duration": 7978122765,
+              "status": "passed"
             },
-            "line": 7,
+            "line": 25,
             "name": "User navigate to Amazon site",
             "match": {
               "location": "Home_page_sd.user_navigate_to_Amazon_site()"
@@ -23,30 +24,111 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 3565298157,
+              "status": "passed"
             },
-            "line": 8,
-            "name": "Enter \"username\" And  \tEnter \"Password\"",
+            "line": 26,
+            "name": "User clicked on Hello Sign in button",
             "match": {
-              "arguments": [
-                {
-                  "val": "username",
-                  "offset": 7
-                },
-                {
-                  "val": "Password",
-                  "offset": 30
-                }
-              ],
-              "location": "Login_page_sd.enter_And_Enter(String,String)"
+              "location": "Home_page_sd.user_clicked_on_Hello_Sign_in_button()"
             },
-            "keyword": "When "
+            "keyword": "Then "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 53269,
+              "status": "passed"
             },
-            "line": 9,
+            "line": 27,
+            "name": "close the browser",
+            "match": {
+              "location": "Home_page_sd.close_the_browser()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 23,
+            "name": "@CurrentTest"
+          }
+        ]
+      }
+    ],
+    "name": "To Test Home page of Amazon website",
+    "description": "",
+    "id": "to-test-home-page-of-amazon-website",
+    "keyword": "Feature",
+    "uri": "Home.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@Home"
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 13,
+        "name": "User Logged in Amazon using Data Table with Data Value in Step it self",
+        "description": "",
+        "id": "to-test-login-of-amazon-page-using-different-data-driven-testing;user-logged-in-amazon-using-data-table-with-data-value-in-step-it-self",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6671736900,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User navigate to Amazon site",
+            "match": {
+              "location": "Home_page_sd.user_navigate_to_Amazon_site()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4808222205,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User clicked on Hello Sign in button",
+            "match": {
+              "location": "Home_page_sd.user_clicked_on_Hello_Sign_in_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4849340067,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User Enter username and enter Password",
+            "match": {
+              "location": "Login_page_sd.user_Enter_username_and_enter_Password(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "bhadrebalaji@gmail.com",
+                  "jodha@123"
+                ],
+                "line": 17
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 91577961,
+              "status": "passed"
+            },
+            "line": 18,
             "name": "Validate logged user",
             "match": {
               "location": "Login_page_sd.validate_logged_user()"
@@ -56,8 +138,8 @@
         ],
         "tags": [
           {
-            "line": 5,
-            "name": "@Regression"
+            "line": 12,
+            "name": "@CurrentTest"
           }
         ]
       }
