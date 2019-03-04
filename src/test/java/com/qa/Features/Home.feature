@@ -20,7 +20,7 @@ Feature: To Test Home page of Amazon website
 		Then  Validate all the Footer Menu
 		Then close the browser
 		
-		@Homepage @Regression @EndtoEnd
+		@CurrentTest
   Scenario: Validate Hello Sign in menu
     Given User navigate to Amazon site
 		Then  User clicked on Hello Sign in button

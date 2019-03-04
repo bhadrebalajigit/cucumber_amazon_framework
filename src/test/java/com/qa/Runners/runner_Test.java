@@ -12,7 +12,7 @@ import cucumber.api.junit.Cucumber;
 		monochrome=true,
 		plugin = {"html:target/site/cucumber-pretty","json:target/cucumber.json"},
 		//tags={"@LoginTest,@SmokeTest"}
-		tags={"@Loginwithscenariooutline"}
+		tags={"@CurrentTest"}
 		)
 public class runner_Test {
 

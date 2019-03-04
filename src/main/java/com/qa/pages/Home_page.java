@@ -14,6 +14,7 @@ import org.openqa.selenium.support.FindBys;
 import org.openqa.selenium.support.PageFactory;
 
 import com.qa.Managers.FileReaderManager;
+import com.qa.utils.Common_functions;
 
 public class Home_page {
 	
@@ -22,9 +23,10 @@ public class Home_page {
 	
 	String [] footers_menu={"Get to Know Us","Connect with Us","Make Money with Us","Let Us Help You"};
 	
-	@FindBy(xpath="//span[@class='nav-line-1' and contains(text(),'Hello, Sign in')]")
-	private WebElement Hello_sign_in;
+	/*@FindBy(xpath="//span[@class='nav-line-1' and contains(text(),'Hello, Sign in')]")
+	private WebElement Hello_sign_in;*/
 	
+	private String Hello_sign_in="//span[@class='nav-line-1' and contains(text(),'Hello, Sign in')]";
 
 	private WebElement Footers;
 	
@@ -43,7 +45,7 @@ public class Home_page {
 	 
 	 public boolean Hello_sign_in_menu()
 	 {
-		 return Hello_sign_in.isDisplayed();
+		 return driver.findElement(By.xpath(Hello_sign_in)).isDisplayed();
 	 }
 	
     public void footer_menu()
@@ -63,13 +65,19 @@ public class Home_page {
     	}
     }
     
-    public Login_page Hello_signin_button()
+    public void Hello_signin_button()
+    {
+    	
+    	Common_functions.clickmethod(driver, By.xpath(Hello_sign_in));
+    }
+    
+   /* public Login_page Hello_signin_button()
     {
     	Hello_sign_in.click();
     	
     	return new Login_page(driver);
     	
-    }
+    }*/
     
     public String title_homepage()
     {
@@ -77,6 +85,6 @@ public class Home_page {
     }
     public void close_browser()
     {
-    	driver.close();
+    	//driver.close();
     }
 }
