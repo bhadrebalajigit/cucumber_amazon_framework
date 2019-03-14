@@ -120,6 +120,13 @@ public class Common_functions
 		 // This is to switch to the main window
 		 driver.switchTo().window(mainWindow);
 		 }
+	 public static void contain_text(WebDriver driver,String text)
+		{
+			driver.findElement(By.xpath("//*[contains(text(),'"+text+"')]"));
+		}
+	 
+	 
 	 }
+	
 	
 

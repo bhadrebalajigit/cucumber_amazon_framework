@@ -22,7 +22,10 @@ import cucumber.api.junit.Cucumber;
 		tags={"@CurrentTest"}
 		
 		)
+
 //mvn test -Dcucumber.options="src/test/java --tags @CurrentTest"
+
+//https://stackoverflow.com/questions/39471048/run-javacucumberjunit-maven-project-in-command-line/40974069
 
 public class runner_Test 
 
