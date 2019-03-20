@@ -1,4 +1,10 @@
 {
 "Username":"bhadrebalaji",
-"Password":"jodha@123"
+"Password":"jodha@123",
+"tags": [
+      {
+        "line": 1,
+        "name": "@Login"
+      }
+    ]
 }

@@ -9,6 +9,13 @@ import java.util.Properties;
 import com.qa.Enums.DriverType;
 import com.qa.Enums.EnvironmentType;
 
+/**
+ * @ Author Balaji Bhadre
+ * @param object,filename
+ * @throws ParseException 
+ * @throws IOException 
+ * @throws FileNotFoundException 
+ */
 public class ConfigFileReader 
 
 	{
