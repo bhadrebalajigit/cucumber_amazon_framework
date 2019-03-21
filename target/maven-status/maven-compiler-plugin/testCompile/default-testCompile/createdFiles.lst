@@ -1,0 +1,4 @@
+com\qa\StepDefinitions\Login_page_sd.class
+com\qa\Runners\runner_Test.class
+com\qa\StepDefinitions\Home_page_sd.class
+com\qa\StepDefinitions\Hooks.class
