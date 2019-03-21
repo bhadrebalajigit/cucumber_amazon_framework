@@ -3,6 +3,7 @@ package com.qa.StepDefinitions;
 import org.openqa.selenium.WebDriver;
 
 
+import com.cucumber.listener.Reporter;
 import com.qa.Managers.PageObjectManager;
 import com.qa.Managers.WebDriverManager;
 import com.qa.TestBase.TestContext;
@@ -30,6 +31,7 @@ public class Home_page_sd {
 	{
 
 		 homePage.navigateTo_HomePage();
+		 Reporter.addStepLog("Navigating to Amazon site");
 		 
 	   
 	}
