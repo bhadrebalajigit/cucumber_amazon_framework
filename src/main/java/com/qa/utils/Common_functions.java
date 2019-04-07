@@ -2,10 +2,12 @@ package com.qa.utils;
 
 import java.util.Iterator;
 import java.util.Set;
-
+import static org.junit.Assert.*;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -13,6 +15,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.gargoylesoftware.htmlunit.ElementNotFoundException;
+
+import cucumber.api.Scenario;
 
 public class Common_functions 
 
@@ -33,6 +37,11 @@ public class Common_functions
 		}
 
 	}
+	public static String gettext(WebDriver driver,By obj)
+	{
+		String text_displayed=driver.findElement(obj).getText();
+		return text_displayed;
+	}
 	public static void clickmethod(WebDriver driver,By obj)
 	{
 			try
@@ -46,7 +55,6 @@ public class Common_functions
 			{
 				System.out.println(e);
 			}
-	
 	}
 	
 	public static void alter_Handling(WebDriver driver)
@@ -125,8 +133,44 @@ public class Common_functions
 			driver.findElement(By.xpath("//*[contains(text(),'"+text+"')]"));
 		}
 	 
-	 
+	 public static boolean isdisplayed(WebDriver driver,By obj)
+	 {
+		 return driver.findElement(obj).isEnabled();
 	 }
+	 
+	 public static boolean isselected(WebDriver driver,By obj)
+	 {
+		 return driver.findElement(obj).isSelected(); 
+	 }
+	 
+	 public static boolean isenabled(WebDriver driver,By obj)
+	 {
+		 return driver.findElement(obj).isEnabled();
+	 }
+	 
+	 public static void assertsame_validation(WebDriver driver,By obj,String expected)
+	 {
+		 
+		String actual =driver.findElement(obj).getText();
+		
+		if(actual.equalsIgnoreCase(expected))
+		{
+			System.out.println("Actual Text of Webelement is:"+actual+"matched with Expecetd:"+expected);
+	    } else
+	    {
+	    	System.out.println("Actual Text of Webelement is:"+actual+" not matched with Expecetd:"+expected);
+	    }
+
+	 }
+	 
+	 public static void Screenshot(Scenario scenario,WebDriver driver) {
+		    if (scenario.isFailed()) {
+		      // Take a screenshot...
+		      final byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+		      scenario.embed(screenshot, "image/png"); // ... and embed it in the report.
+		    }
+		}
 	
+}
 	
 

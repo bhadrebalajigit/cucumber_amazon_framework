@@ -1,6 +1,9 @@
 package com.qa.StepDefinitions;
 
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+
 
 
 import com.cucumber.listener.Reporter;
@@ -8,18 +11,29 @@ import com.qa.Managers.PageObjectManager;
 import com.qa.Managers.WebDriverManager;
 import com.qa.TestBase.TestContext;
 import com.qa.pages.Home_page;
+import com.qa.utils.MyScreenRecorder;
 
+import cucumber.api.Scenario;
 import cucumber.api.java.After;
+import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 
 public class Home_page_sd {
 
-
+    
 	TestContext testContext;
 	public Home_page homePage;
+	private Scenario scenario;
 
 	
+	@Before
+	public String beforehooks(Scenario scenario)
+	{
+		this.scenario=scenario;
+		String scenario_name=scenario.getName();
+		return scenario_name;
+	}
 	public Home_page_sd(TestContext context)
 	{
 		testContext=context;
@@ -71,4 +85,23 @@ public class Home_page_sd {
 	{
 	   homePage.close_browser();
 	}
+	
+	@Given("^User started recording$")
+	public void user_started_recording() throws Exception 
+	{
+	
+		String scenario_name=beforehooks(scenario);
+		
+	   MyScreenRecorder.startRecording(scenario_name);
+	}
+
+	@Then("^Stop the recording$")
+	public void stop_the_recording() throws Exception
+	{
+		MyScreenRecorder.stopRecording();
+	}
+
+  
+
 }
+

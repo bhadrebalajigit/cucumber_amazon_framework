@@ -11,6 +11,7 @@ import org.junit.runner.RunWith;
 import org.junit.runner.Runner;
 import org.junit.runner.notification.RunNotifier;
 
+import com.aventstack.extentreports.gherkin.model.Scenario;
 import com.cucumber.listener.Reporter;
 import com.qa.Managers.FileReaderManager;
 
@@ -24,9 +25,9 @@ import cucumber.api.junit.Cucumber;
 		,glue={"com/qa/StepDefinitions"},
 		dryRun=false,
 		monochrome=true,
-		plugin = {"com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/Amazon_Report.html"},
+		plugin = {"com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/Amazon_Report.html"}
 				//plugin = { "com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/report.html"},
-		tags={"@CurrentTest"}
+		//tags={"@CurrentTest"}
 		
 		)
 
@@ -47,9 +48,11 @@ public class runner_Test
 	     Reporter.setSystemInfo("Selenium", "3.7.0");
 	     Reporter.setSystemInfo("Maven", "3.5.2");
 	     Reporter.setSystemInfo("Java Version", "1.8.0_151");
-		 
+
 		 }
 
+	
+	
 	}
 
 

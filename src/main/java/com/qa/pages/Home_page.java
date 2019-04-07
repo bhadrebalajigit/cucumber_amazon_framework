@@ -23,9 +23,7 @@ public class Home_page {
 	
 	String [] footers_menu={"Get to Know Us","Connect with Us","Make Money with Us","Let Us Help You"};
 	
-	/*@FindBy(xpath="//span[@class='nav-line-1' and contains(text(),'Hello, Sign in')]")
-	private WebElement Hello_sign_in;*/
-	
+
 	private String Hello_sign_in="//span[@class='nav-line-1' and contains(text(),'Hello, Sign in')]";
 
 	private WebElement Footers;
@@ -71,13 +69,6 @@ public class Home_page {
     	Common_functions.clickmethod(driver, By.xpath(Hello_sign_in));
     }
     
-   /* public Login_page Hello_signin_button()
-    {
-    	Hello_sign_in.click();
-    	
-    	return new Login_page(driver);
-    	
-    }*/
     
     public String title_homepage()
     {

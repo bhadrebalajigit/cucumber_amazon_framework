@@ -22,8 +22,12 @@ Feature: To Test Home page of Amazon website
 		
 		@CurrentTest
   Scenario: Validate Hello Sign in menu
+   
+    Given User started recording 
     Given User navigate to Amazon site
-		Then  User clicked on Hello Sign in button
-		Then close the browser
+	Then  User clicked on Hello Sign in button
+	Then close the browser
+	Then Stop the recording
+	
 		
 
