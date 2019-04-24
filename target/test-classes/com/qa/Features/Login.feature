@@ -9,7 +9,7 @@ Feature: To test login of amazon page using different data driven testing
 		When  Enter "username" And  Enter "Password"
 		Then 	Validate logged user
 		
- @CurrentTest
+ @Current
   Scenario: User Logged in Amazon using Data Table with Data Value in Step it self
     Given User navigate to Amazon site
     Then  User clicked on Hello Sign in button

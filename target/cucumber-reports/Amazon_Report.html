@@ -53,7 +53,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Mar 27, 2019 11:06:55 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Apr 13, 2019 11:01:23 PM</span>
 				</a>
 			</li>
 			<li>
@@ -80,7 +80,6 @@
 				<ul id='tests-toggle' class='dropdown-content'>
 											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
 						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
-						<li status='skip'><a href='#!'>Skip <i class='material-icons cyan-text'>redo</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -93,14 +92,8 @@
 					<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>@Home</a></li>
-					<li><a href='#'>@Regression</a></li>
-					<li><a href='#'>@Homepage</a></li>
-					<li><a href='#'>@CurrentTest</a></li>
 					<li><a href='#'>@Login</a></li>
-					<li><a href='#'>@LoginwithoutDataTable</a></li>
-					<li><a href='#'>@Loginwithscenariooutline</a></li>
-					<li><a href='#'>@Product</a></li>
+					<li><a href='#'>@Current</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -148,10 +141,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='66.667%'><span class='strong'>2</span> feature(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> feature(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='33.333%'>1</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -163,10 +156,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='66.667%'><span class='strong'>6</span> scenario(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> scenario(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='33.333%'>3</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -178,10 +171,10 @@
 					<canvas id='grandchild-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='82.353%'><span class='strong'>28</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='75%'><span class='strong'>3</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='8.824%'>3</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='8.824%'>3</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='25%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -195,21 +188,21 @@
 			<ul id='test-collection' class='test-collection'>
 				
 				
-				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
+				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>To Test Home page of Amazon website</span>
-						<span class='test-time'>Mar 27, 2019 11:06:55 PM</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='test-name'>To test login of amazon page using different data driven testing</span>
+						<span class='test-time'>Apr 13, 2019 11:01:23 PM</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
-<div class='scenario node' test-id='2' status='pass'>
+<div class='scenario node' test-id='2' status='fail'>
 	<div class='category-list'>
-		<span class='category label white-text'>@Regression</span>
+		<span class='category label white-text'>@Current</span>
 	</div>
-	<span class='duration right label'>0h 0m 40s+877ms</span>
+	<span class='duration right label'>0h 5m 42s+297ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
-		<span class="desc-text">To Validate title of page</span>
+		<span class="desc-text">User Logged in Amazon using Data Table with Data Value in Step it self</span>
 	</div>
 	<ul class='steps'>
 		<li test-id='3' class='node given pass' status='pass'>
@@ -225,231 +218,11 @@
 			
 			<b>Then</b>
 			
-			<span class="bdd-step-name">Then Validate title of of amazone page</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='5' class='node then pass' status='pass'>
-			
-			<b>Then</b>
-			
-			<span class="bdd-step-name">Then close the browser</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-	</ul>
-</div>
-<div class='scenario node' test-id='6' status='pass'>
-	<div class='category-list'>
-		<span class='category label white-text'>@Homepage</span>
-	</div>
-	<span class='duration right label'>0h 0m 53s+239ms</span>
-	<div class='desc'>
-		<b>Scenario</b>
-		<span class="desc-text">Validate Hello Sign in menu</span>
-	</div>
-	<ul class='steps'>
-		<li test-id='7' class='node given pass' status='pass'>
-			
-			<b>Given</b>
-			
-			<span class="bdd-step-name">Given User navigate to Amazon site</span>
-				<div class='pre'>Navigating to Amazon site</div>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='8' class='node then pass' status='pass'>
-			
-			<b>Then</b>
-			
-			<span class="bdd-step-name">Then Validate Hello Sign in menu</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='9' class='node then pass' status='pass'>
-			
-			<b>Then</b>
-			
-			<span class="bdd-step-name">Then close the browser</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-	</ul>
-</div>
-<div class='scenario node' test-id='10' status='pass'>
-	<div class='category-list'>
-		<span class='category label white-text'>@Homepage</span>
-	</div>
-	<span class='duration right label'>0h 0m 26s+299ms</span>
-	<div class='desc'>
-		<b>Scenario</b>
-		<span class="desc-text">Validate Hello Sign in menu</span>
-	</div>
-	<ul class='steps'>
-		<li test-id='11' class='node given pass' status='pass'>
-			
-			<b>Given</b>
-			
-			<span class="bdd-step-name">Given User navigate to Amazon site</span>
-				<div class='pre'>Navigating to Amazon site</div>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='12' class='node then pass' status='pass'>
-			
-			<b>Then</b>
-			
-			<span class="bdd-step-name">Then Validate all the Footer Menu</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='13' class='node then pass' status='pass'>
-			
-			<b>Then</b>
-			
-			<span class="bdd-step-name">Then close the browser</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-	</ul>
-</div>
-<div class='scenario node' test-id='14' status='pass'>
-	<div class='category-list'>
-		<span class='category label white-text'>@CurrentTest</span>
-	</div>
-	<span class='duration right label'>0h 0m 26s+864ms</span>
-	<div class='desc'>
-		<b>Scenario</b>
-		<span class="desc-text">Validate Hello Sign in menu</span>
-	</div>
-	<ul class='steps'>
-		<li test-id='15' class='node given pass' status='pass'>
-			
-			<b>Given</b>
-			
-			<span class="bdd-step-name">Given User started recording</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='16' class='node given pass' status='pass'>
-			
-			<b>Given</b>
-			
-			<span class="bdd-step-name">Given User navigate to Amazon site</span>
-				<div class='pre'>Navigating to Amazon site</div>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='17' class='node then pass' status='pass'>
-			
-			<b>Then</b>
-			
 			<span class="bdd-step-name">Then User clicked on Hello Sign in button</span>
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='18' class='node then pass' status='pass'>
-			
-			<b>Then</b>
-			
-			<span class="bdd-step-name">Then close the browser</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='19' class='node then pass' status='pass'>
-			
-			<b>Then</b>
-			
-			<span class="bdd-step-name">Then Stop the recording</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-	</ul>
-</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='20'>
-					<div class='test-heading'>
-						<span class='test-name'>To test login of amazon page using different data driven testing</span>
-						<span class='test-time'>Mar 27, 2019 11:09:32 PM</span>
-						<span class='test-status right fail'>fail</span>
-					</div>
-					<div class='test-content hide'>
-<div class='scenario node' test-id='21' status='pass'>
-	<div class='category-list'>
-		<span class='category label white-text'>@LoginwithoutDataTable</span>
-	</div>
-	<span class='duration right label'>0h 0m 37s+695ms</span>
-	<div class='desc'>
-		<b>Scenario</b>
-		<span class="desc-text">User Logged in Amazon using without Data Table</span>
-	</div>
-	<ul class='steps'>
-		<li test-id='22' class='node given pass' status='pass'>
-			
-			<b>Given</b>
-			
-			<span class="bdd-step-name">Given User navigate to Amazon site</span>
-				<div class='pre'>Navigating to Amazon site</div>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='23' class='node then pass' status='pass'>
-			
-			<b>Then</b>
-			
-			<span class="bdd-step-name">Then User clicked on Hello Sign in button</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='24' class='node when skip' status='skip'>
-			
-			<b>When</b>
-			
-			<span class="bdd-step-name">When Enter "username" And  Enter "Password"</span>
-				<div class='pre'>undefined</div>
-			
-		</li>
-		<li test-id='25' class='node then skip' status='skip'>
-			
-			<b>Then</b>
-			
-			<span class="bdd-step-name">Then Validate logged user</span>
-				<div class='pre'>skipped</div>
-			
-		</li>
-	</ul>
-</div>
-<div class='scenario node' test-id='26' status='fail'>
-	<div class='category-list'>
-		<span class='category label white-text'>@CurrentTest</span>
-	</div>
-	<span class='duration right label'>0h 1m 38s+3ms</span>
-	<div class='desc'>
-		<b>Scenario</b>
-		<span class="desc-text">User Logged in Amazon using Data Table with Data Value in Step it self</span>
-	</div>
-	<ul class='steps'>
-		<li test-id='27' class='node given pass' status='pass'>
-			
-			<b>Given</b>
-			
-			<span class="bdd-step-name">Given User navigate to Amazon site</span>
-				<div class='pre'>Navigating to Amazon site</div>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='28' class='node then pass' status='pass'>
-			
-			<b>Then</b>
-			
-			<span class="bdd-step-name">Then User clicked on Hello Sign in button</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='29' class='node and pass' status='pass'>
+		<li test-id='5' class='node and pass' status='pass'>
 			
 			<b>And</b>
 			
@@ -458,234 +231,26 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='30' class='node then fail' status='fail'>
+		<li test-id='6' class='node then fail' status='fail'>
 			
 			<b>Then</b>
 			
 			<span class="bdd-step-name">Then Validate logged user</span>
-				<div class='pre'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='nav-tools']/a[@id='nav-link-yourAccount']/span[@class='nav-line-1']"}
-  (Session info: chrome=73.0.3683.86)
-  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'HP-HP', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_51'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.46.628402 (536cd7adbad73a..., userDataDir: C:\Users\HP\AppData\Local\T...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50951}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.86, webStorageEnabled: true}
-Session ID: f51d8f6e3b6c47afb9fac2076488f040
-*** Element info: {Using=xpath, value=//div[@id='nav-tools']/a[@id='nav-link-yourAccount']/span[@class='nav-line-1']}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:419)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+				<div class='pre'><pre>java.lang.NullPointerException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
 	at com.sun.proxy.$Proxy16.getText(Unknown Source)
-	at com.qa.pages.Login_page.validate_logged_user(Login_page.java:38)
-	at com.qa.StepDefinitions.Login_page_sd.validate_logged_user(Login_page_sd.java:53)
+	at com.qa.pages.Login_page.validate_logged_user(Login_page.java:41)
+	at com.qa.StepDefinitions.Login_page_sd.validate_logged_user(Login_page_sd.java:57)
 	at ✽.Then Validate logged user(Login.feature:18)
 </pre></div>
 			
 		</li>
 	</ul>
 </div>
-<div class='scenariooutline node' test-id='31' status='fail'>
-	<span class='duration right label'>0h 6m 36s+241ms</span>
-	<div class='desc'>
-		<b>ScenarioOutline</b>
-		<span class="desc-text">Successful Login with Valid Credentials</span>
-	</div>
-	<ul class='steps'>
-		<li test-id='32' class='node scenario pass' status='pass'>
-			<div class='category-list'>
-				<span class='category label white-text'>@Login</span>
-				<span class='category label white-text'>@Loginwithscenariooutline</span>
-			</div>
-			
-			<b>Scenario</b>
-			
-			<span class="bdd-step-name">Successful Login with Valid Credentials</span>
-			
-				<ul class='steps'>
-					<li test-id='33' class='node given pass' status='pass'><b>Given</b>
-						<span class="bdd-step-name">Given User navigate to Amazon site</span>
-							<div class='pre'>Navigating to Amazon site</div>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='34' class='node when pass' status='pass'><b>When</b>
-						<span class="bdd-step-name">When User clicked on Hello Sign in button</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='35' class='node then pass' status='pass'><b>Then</b>
-						<span class="bdd-step-name">Then "bhadrebalaji@gmail.com" and "jodha@123"</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='36' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And Validate logged user</span>
-							<div class='pre'>passed</div>
-					</li>
-				</ul>
-		</li>
-		<li test-id='37' class='node scenario fail' status='fail'>
-			<div class='category-list'>
-				<span class='category label white-text'>@Login</span>
-				<span class='category label white-text'>@Loginwithscenariooutline</span>
-			</div>
-			
-			<b>Scenario</b>
-			
-			<span class="bdd-step-name">Successful Login with Valid Credentials</span>
-			
-				<ul class='steps'>
-					<li test-id='38' class='node given pass' status='pass'><b>Given</b>
-						<span class="bdd-step-name">Given User navigate to Amazon site</span>
-							<div class='pre'>Navigating to Amazon site</div>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='39' class='node when pass' status='pass'><b>When</b>
-						<span class="bdd-step-name">When User clicked on Hello Sign in button</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='40' class='node then pass' status='pass'><b>Then</b>
-						<span class="bdd-step-name">Then "tupekarsupriya@gmail.com" and "jodha@123"</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='41' class='node and fail' status='fail'><b>And</b>
-						<span class="bdd-step-name">And Validate logged user</span>
-							<div class='pre'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='nav-tools']/a[@id='nav-link-yourAccount']/span[@class='nav-line-1']"}
-  (Session info: chrome=73.0.3683.86)
-  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'HP-HP', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_51'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.46.628402 (536cd7adbad73a..., userDataDir: C:\Users\HP\AppData\Local\T...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:54721}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.86, webStorageEnabled: true}
-Session ID: 9b0d9b9a92df0506a47b32b51a883cf9
-*** Element info: {Using=xpath, value=//div[@id='nav-tools']/a[@id='nav-link-yourAccount']/span[@class='nav-line-1']}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:419)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy16.getText(Unknown Source)
-	at com.qa.pages.Login_page.validate_logged_user(Login_page.java:38)
-	at com.qa.StepDefinitions.Login_page_sd.validate_logged_user(Login_page_sd.java:53)
-	at ✽.And Validate logged user(Login.feature:25)
-</pre></div>
-					</li>
-				</ul>
-		</li>
-		<li test-id='42' class='node scenario fail' status='fail'>
-			<div class='category-list'>
-				<span class='category label white-text'>@Login</span>
-				<span class='category label white-text'>@Loginwithscenariooutline</span>
-			</div>
-			
-			<b>Scenario</b>
-			
-			<span class="bdd-step-name">Successful Login with Valid Credentials</span>
-			
-				<ul class='steps'>
-					<li test-id='43' class='node given pass' status='pass'><b>Given</b>
-						<span class="bdd-step-name">Given User navigate to Amazon site</span>
-							<div class='pre'>Navigating to Amazon site</div>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='44' class='node when pass' status='pass'><b>When</b>
-						<span class="bdd-step-name">When User clicked on Hello Sign in button</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='45' class='node then fail' status='fail'><b>Then</b>
-						<span class="bdd-step-name">Then "bhadrebalaji@gmail.com" and "jodha@123"</span>
-							<div class='pre'><pre>org.openqa.selenium.TimeoutException: timeout
-  (Session info: chrome=73.0.3683.86)
-  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'HP-HP', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_51'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.46.628402 (536cd7adbad73a..., userDataDir: C:\Users\HP\AppData\Local\T...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:54799}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.86, webStorageEnabled: true}
-Session ID: 6443e132c1a80f3f308f46f44481dc86
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:100)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy16.sendKeys(Unknown Source)
-	at com.qa.pages.Login_page.user_credentials(Login_page.java:33)
-	at com.qa.StepDefinitions.Login_page_sd.and(Login_page_sd.java:45)
-	at ✽.Then "bhadrebalaji@gmail.com" and "jodha@123"(Login.feature:24)
-</pre></div>
-					</li>
-					<li test-id='46' class='node and skip' status='skip'><b>And</b>
-						<span class="bdd-step-name">And Validate logged user</span>
-							<div class='pre'>skipped</div>
-					</li>
-				</ul>
-		</li>
-	</ul>
-</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='47'>
-					<div class='test-heading'>
-						<span class='test-name'>To test login of amazon page using different data driven testing</span>
-						<span class='test-time'>Mar 27, 2019 11:18:31 PM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Mar 27, 2019 11:18:31 PM</span>
-	<span class='label end-time'>Mar 27, 2019 11:18:31 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
-</div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>@Product</span>
-			</div>
-	</div>
 					</div>
 				</li>
 			</ul>
@@ -740,122 +305,14 @@ Session ID: 6443e132c1a80f3f308f46f44481dc86
 				
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@Home</span>
+						<span class='category-name'>@Login</span>
 						<span class='category-status right'>
-							<span class='label pass'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 1</span>
-							
-							
-						</div>
-					
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Mar 27, 2019 11:06:55 PM</td>
-										<td class='linked' test-id='1'>To Test Home page of Amazon website</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@Regression</span>
-						<span class='category-status right'>
-							<span class='label pass'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 1</span>
-							
-							
-						</div>
-					
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Mar 27, 2019 11:06:55 PM</td>
-										<td class='linked' test-id='2'>To Test Home page of Amazon website.To Validate title of page</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@Homepage</span>
-						<span class='category-status right'>
-							<span class='label pass'>2</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 2</span>
-							
-							
-						</div>
-					
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Mar 27, 2019 11:07:39 PM</td>
-										<td class='linked' test-id='6'>To Test Home page of Amazon website.Validate Hello Sign in menu</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Mar 27, 2019 11:08:34 PM</td>
-										<td class='linked' test-id='10'>To Test Home page of Amazon website.Validate Hello Sign in menu</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@CurrentTest</span>
-						<span class='category-status right'>
-							<span class='label pass'>1</span>
 							<span class='label fail'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
 							<span class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
@@ -871,13 +328,8 @@ Session ID: 6443e132c1a80f3f308f46f44481dc86
 								</thead>
 								<tbody>
 									<tr>
-										<td>Mar 27, 2019 11:09:03 PM</td>
-										<td class='linked' test-id='14'>To Test Home page of Amazon website.Validate Hello Sign in menu</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Mar 27, 2019 11:10:12 PM</td>
-										<td class='linked' test-id='26'>To test login of amazon page using different data driven testing.User Logged in Amazon using Data Table with Data Value in Step it self</td>
+										<td>Apr 13, 2019 11:01:23 PM</td>
+										<td class='linked' test-id='1'>To test login of amazon page using different data driven testing</td>
 										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 								</tbody>
@@ -887,16 +339,15 @@ Session ID: 6443e132c1a80f3f308f46f44481dc86
 				</li>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@Login</span>
+						<span class='category-name'>@Current</span>
 						<span class='category-status right'>
-							<span class='label pass'>1</span>
-							<span class='label fail'>3</span>
+							<span class='label fail'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 1</span>
-							<span class='label red lighten-1 white-text'>Failed: 3</span>
+							
+							<span class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 					
@@ -911,137 +362,9 @@ Session ID: 6443e132c1a80f3f308f46f44481dc86
 								</thead>
 								<tbody>
 									<tr>
-										<td>Mar 27, 2019 11:09:32 PM</td>
-										<td class='linked' test-id='20'>To test login of amazon page using different data driven testing</td>
+										<td>Apr 13, 2019 11:01:23 PM</td>
+										<td class='linked' test-id='2'>To test login of amazon page using different data driven testing.User Logged in Amazon using Data Table with Data Value in Step it self</td>
 										<td><span class='test-status fail'>fail</span></td>
-									</tr>
-									<tr>
-										<td>Mar 27, 2019 11:11:52 PM</td>
-										<td class='linked' test-id='32'>To test login of amazon page using different data driven testing.Successful Login with Valid Credentials.Successful Login with Valid Credentials</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Mar 27, 2019 11:12:20 PM</td>
-										<td class='linked' test-id='37'>To test login of amazon page using different data driven testing.Successful Login with Valid Credentials.Successful Login with Valid Credentials</td>
-										<td><span class='test-status fail'>fail</span></td>
-									</tr>
-									<tr>
-										<td>Mar 27, 2019 11:13:08 PM</td>
-										<td class='linked' test-id='42'>To test login of amazon page using different data driven testing.Successful Login with Valid Credentials.Successful Login with Valid Credentials</td>
-										<td><span class='test-status fail'>fail</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@LoginwithoutDataTable</span>
-						<span class='category-status right'>
-							<span class='label pass'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 1</span>
-							
-							
-						</div>
-					
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Mar 27, 2019 11:09:32 PM</td>
-										<td class='linked' test-id='21'>To test login of amazon page using different data driven testing.User Logged in Amazon using without Data Table</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@Loginwithscenariooutline</span>
-						<span class='category-status right'>
-							<span class='label pass'>1</span>
-							<span class='label fail'>2</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 1</span>
-							<span class='label red lighten-1 white-text'>Failed: 2</span>
-							
-						</div>
-					
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Mar 27, 2019 11:11:52 PM</td>
-										<td class='linked' test-id='32'>To test login of amazon page using different data driven testing.Successful Login with Valid Credentials.Successful Login with Valid Credentials</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Mar 27, 2019 11:12:20 PM</td>
-										<td class='linked' test-id='37'>To test login of amazon page using different data driven testing.Successful Login with Valid Credentials.Successful Login with Valid Credentials</td>
-										<td><span class='test-status fail'>fail</span></td>
-									</tr>
-									<tr>
-										<td>Mar 27, 2019 11:13:08 PM</td>
-										<td class='linked' test-id='42'>To test login of amazon page using different data driven testing.Successful Login with Valid Credentials.Successful Login with Valid Credentials</td>
-										<td><span class='test-status fail'>fail</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@Product</span>
-						<span class='category-status right'>
-							<span class='label pass'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 1</span>
-							
-							
-						</div>
-					
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Mar 27, 2019 11:18:31 PM</td>
-										<td class='linked' test-id='47'>To test login of amazon page using different data driven testing</td>
-										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -1087,104 +410,7 @@ Session ID: 6443e132c1a80f3f308f46f44481dc86
 
                         <li class='exception displayed active'>
                             <div class='exception-heading'>
-                                <span class='exception-name'>org.openqa.selenium.NoSuchElementException</span>
-                                <span class='exception-count right'><span class='label red lighten-1 white-text'>2</span></span>
-                            </div>
-                            <div class='exception-content hide'>
-                                <div class='exception-tests'>
-                                    <table class='bordered table-results'>
-                                        <thead>
-                                        <tr>
-                                            <th>Timestamp</th>
-                                            <th>TestName</th>
-                                            <th>Status</th>
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-                                                    <tr>
-                                                        <td>Mar 27, 2019 11:11:30 PM</td>
-                                                        <td class='linked' test-id='30'>To test login of amazon page using different data driven testing.User Logged in Amazon using Data Table with Data Value in Step it self.Then Validate logged user</td>
-                                                        <td><pre><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='nav-tools']/a[@id='nav-link-yourAccount']/span[@class='nav-line-1']"}
-  (Session info: chrome=73.0.3683.86)
-  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'HP-HP', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_51'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.46.628402 (536cd7adbad73a..., userDataDir: C:\Users\HP\AppData\Local\T...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50951}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.86, webStorageEnabled: true}
-Session ID: f51d8f6e3b6c47afb9fac2076488f040
-*** Element info: {Using=xpath, value=//div[@id='nav-tools']/a[@id='nav-link-yourAccount']/span[@class='nav-line-1']}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:419)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy16.getText(Unknown Source)
-	at com.qa.pages.Login_page.validate_logged_user(Login_page.java:38)
-	at com.qa.StepDefinitions.Login_page_sd.validate_logged_user(Login_page_sd.java:53)
-	at ✽.Then Validate logged user(Login.feature:18)
-</pre></pre></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Mar 27, 2019 11:12:45 PM</td>
-                                                        <td class='linked' test-id='41'>To test login of amazon page using different data driven testing.Successful Login with Valid Credentials.Successful Login with Valid Credentials.And Validate logged user</td>
-                                                        <td><pre><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='nav-tools']/a[@id='nav-link-yourAccount']/span[@class='nav-line-1']"}
-  (Session info: chrome=73.0.3683.86)
-  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'HP-HP', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_51'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.46.628402 (536cd7adbad73a..., userDataDir: C:\Users\HP\AppData\Local\T...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:54721}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.86, webStorageEnabled: true}
-Session ID: 9b0d9b9a92df0506a47b32b51a883cf9
-*** Element info: {Using=xpath, value=//div[@id='nav-tools']/a[@id='nav-link-yourAccount']/span[@class='nav-line-1']}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:419)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy16.getText(Unknown Source)
-	at com.qa.pages.Login_page.validate_logged_user(Login_page.java:38)
-	at com.qa.StepDefinitions.Login_page_sd.validate_logged_user(Login_page_sd.java:53)
-	at ✽.And Validate logged user(Login.feature:25)
-</pre></pre></td>
-                                                    </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </li>
-                        <li class='exception displayed active'>
-                            <div class='exception-heading'>
-                                <span class='exception-name'>org.openqa.selenium.TimeoutException</span>
+                                <span class='exception-name'>java.lang.NullPointerException</span>
                                 <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
                             </div>
                             <div class='exception-content hide'>
@@ -1199,40 +425,18 @@ Session ID: 9b0d9b9a92df0506a47b32b51a883cf9
                                         </thead>
                                         <tbody>
                                                     <tr>
-                                                        <td>Mar 27, 2019 11:13:27 PM</td>
-                                                        <td class='linked' test-id='45'>To test login of amazon page using different data driven testing.Successful Login with Valid Credentials.Successful Login with Valid Credentials.Then "bhadrebalaji@gmail.com" and "jodha@123"</td>
-                                                        <td><pre><pre>org.openqa.selenium.TimeoutException: timeout
-  (Session info: chrome=73.0.3683.86)
-  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'HP-HP', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_51'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.46.628402 (536cd7adbad73a..., userDataDir: C:\Users\HP\AppData\Local\T...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:54799}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.86, webStorageEnabled: true}
-Session ID: 6443e132c1a80f3f308f46f44481dc86
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:100)
+                                                        <td>Apr 13, 2019 11:06:50 PM</td>
+                                                        <td class='linked' test-id='6'>To test login of amazon page using different data driven testing.User Logged in Amazon using Data Table with Data Value in Step it self.Then Validate logged user</td>
+                                                        <td><pre><pre>java.lang.NullPointerException
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy16.sendKeys(Unknown Source)
-	at com.qa.pages.Login_page.user_credentials(Login_page.java:33)
-	at com.qa.StepDefinitions.Login_page_sd.and(Login_page_sd.java:45)
-	at ✽.Then "bhadrebalaji@gmail.com" and "jodha@123"(Login.feature:24)
+	at com.sun.proxy.$Proxy16.getText(Unknown Source)
+	at com.qa.pages.Login_page.validate_logged_user(Login_page.java:41)
+	at com.qa.StepDefinitions.Login_page_sd.validate_logged_user(Login_page_sd.java:57)
+	at ✽.Then Validate logged user(Login.feature:18)
 </pre></pre></td>
                                                     </tr>
                                         </tbody>
@@ -1259,37 +463,37 @@ Session ID: 6443e132c1a80f3f308f46f44481dc86
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Features
-					<div class='panel-lead'>3</div>
+					<div class='panel-lead'>1</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>9</div>
+					<div class='panel-lead'>1</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>34</div>
+					<div class='panel-lead'>4</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Mar 27, 2019 11:06:55 PM</div>
+					<div class='panel-lead'>Apr 13, 2019 11:01:23 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Mar 27, 2019 11:18:31 PM</div>
+			 		<div class='panel-lead'>Apr 13, 2019 11:07:12 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>695,644ms</div>
+					<div class='panel-lead'>348,793ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -1341,75 +545,21 @@ Session ID: 6443e132c1a80f3f308f46f44481dc86
 							<th>Passed %</th>
 						</tr>
 						<tr>
-							<td>@Home</td>
-							<td>1</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
-							</td>
-						</tr>
-						<tr>
-							<td>@Regression</td>
-							<td>1</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
-							</td>
-						</tr>
-						<tr>
-							<td>@Homepage</td>
-							<td>2</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
-							</td>
-						</tr>
-						<tr>
-							<td>@CurrentTest</td>
-							<td>1</td>
-							<td>1</td>
-							<td>0</td>
-							<td>
-									50%
-							</td>
-						</tr>
-						<tr>
 							<td>@Login</td>
+							<td>0</td>
 							<td>1</td>
-							<td>3</td>
 							<td>0</td>
 							<td>
-									25%
+									0%
 							</td>
 						</tr>
 						<tr>
-							<td>@LoginwithoutDataTable</td>
+							<td>@Current</td>
+							<td>0</td>
 							<td>1</td>
 							<td>0</td>
-							<td>0</td>
 							<td>
-									100%
-							</td>
-						</tr>
-						<tr>
-							<td>@Loginwithscenariooutline</td>
-							<td>1</td>
-							<td>2</td>
-							<td>0</td>
-							<td>
-									33.333%
-							</td>
-						</tr>
-						<tr>
-							<td>@Product</td>
-							<td>1</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
+									0%
 							</td>
 						</tr>
 					</table>
@@ -1425,7 +575,7 @@ Session ID: 6443e132c1a80f3f308f46f44481dc86
 
 		<script>
 			var statusGroup = {
-				passParent: 2,
+				passParent: 0,
 				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
@@ -1433,23 +583,23 @@ Session ID: 6443e132c1a80f3f308f46f44481dc86
 				skipParent: 0,
 				exceptionsParent: 1,
 				
-				passChild: 6,
-				failChild: 3,
+				passChild: 0,
+				failChild: 1,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				exceptionsChild: 3,
+				exceptionsChild: 1,
 				
-				passGrandChild: 28,
-				failGrandChild: 3,
+				passGrandChild: 3,
+				failGrandChild: 1,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
-				skipGrandChild: 3,
+				skipGrandChild: 0,
 				infoGrandChild: 0,
-				exceptionsGrandChild: 6,
+				exceptionsGrandChild: 1,
 			};
 		</script>
 		

@@ -133,9 +133,9 @@ public class Common_functions
 			driver.findElement(By.xpath("//*[contains(text(),'"+text+"')]"));
 		}
 	 
-	 public static boolean isdisplayed(WebDriver driver,By obj)
+	 public static boolean isdisplayed(WebElement logged_user)
 	 {
-		 return driver.findElement(obj).isEnabled();
+		 return logged_user.isDisplayed();
 	 }
 	 
 	 public static boolean isselected(WebDriver driver,By obj)

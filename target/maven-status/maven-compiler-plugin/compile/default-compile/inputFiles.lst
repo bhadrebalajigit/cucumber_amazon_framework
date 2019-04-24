@@ -1,10 +1,12 @@
 E:\cucumber_amazon_framework\com.qa.amazon\src\main\java\com\qa\Managers\PageObjectManager.java
 E:\cucumber_amazon_framework\com.qa.amazon\src\main\java\com\qa\DataProviders\ConfigFileReader.java
 E:\cucumber_amazon_framework\com.qa.amazon\src\main\java\com\qa\utils\Product_reader.java
+E:\cucumber_amazon_framework\com.qa.amazon\src\main\java\com\qa\utils\MyScreenRecorder.java
 E:\cucumber_amazon_framework\com.qa.amazon\src\main\java\com\qa\utils\map.java
 E:\cucumber_amazon_framework\com.qa.amazon\src\main\java\com\qa\pages\Login_page.java
 E:\cucumber_amazon_framework\com.qa.amazon\src\main\java\com\qa\TestBase\TestContext.java
 E:\cucumber_amazon_framework\com.qa.amazon\src\main\java\com\qa\Managers\WebDriverManager.java
+E:\cucumber_amazon_framework\com.qa.amazon\src\main\java\com\qa\utils\OS_Utils.java
 E:\cucumber_amazon_framework\com.qa.amazon\src\main\java\com\qa\Enums\EnvironmentType.java
 E:\cucumber_amazon_framework\com.qa.amazon\src\main\java\com\qa\utils\json_reader.java
 E:\cucumber_amazon_framework\com.qa.amazon\src\main\java\com\qa\Enums\DriverType.java

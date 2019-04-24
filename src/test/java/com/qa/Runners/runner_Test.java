@@ -25,9 +25,9 @@ import cucumber.api.junit.Cucumber;
 		,glue={"com/qa/StepDefinitions"},
 		dryRun=false,
 		monochrome=true,
-		plugin = {"com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/Amazon_Report.html"}
+		plugin = {"com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/Amazon_Report.html"},
 				//plugin = { "com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/report.html"},
-		//tags={"@CurrentTest"}
+		tags={"@Current"}
 		
 		)
 

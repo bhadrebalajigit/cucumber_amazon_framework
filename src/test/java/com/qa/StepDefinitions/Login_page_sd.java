@@ -5,8 +5,11 @@ import java.util.List;
 import java.util.Map;
 
 import com.qa.TestBase.TestContext;
+
 import com.qa.pages.Home_page;
 import com.qa.pages.Login_page;
+
+
 import cucumber.api.DataTable;
 import cucumber.api.java.en.*;
 
@@ -50,6 +53,7 @@ public class Login_page_sd
 	@Then("^Validate logged user$")
 	public void validate_logged_user() 
 	{
+		
 		System.out.println(" Logged user name:"+loginPage.validate_logged_user());
 	  
 	}

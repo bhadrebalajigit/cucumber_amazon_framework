@@ -6,6 +6,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.qa.utils.Common_functions;
+
 public class Login_page 
 
 {
@@ -35,6 +37,7 @@ public class Login_page
 	
     public String validate_logged_user()
     {
+    	
     	String user_details=logged_user.getText();
     	return user_details;
     	
